@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <section a class="container-fluid">
+        <div class="menu">
+            <nav>
+                <a href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                <a href="Perros.html">Perros</a>
+                <a href="Gatos.html">Gatos</a>
+                <a href="contacto.html">Contacto</a>
+
+            </nav>
+        </div>
+        <form action="/action_page.php" class="was-validated">
+            <div class="form-group">
+                <label for="uname">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="coloque su nombre completo" name="uname" required>
+                <div class="valid-feedback">Nombre valido.</div>
+                <div class="invalid-feedback"> Porfavor coloque su nombre.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">email:</label>
+                <input type="email" class="form-control" id="pwd" placeholder="coloque su email" name="pswd" required>
+                <div class="valid-feedback"> Email valido.</div>
+                <div class="invalid-feedback">porfavor coloque su email.</div>
+            </div>
+            <div class="form-group">
+                <label for="identifica">Se Identifica:</label>
+                <br>
+                <select name="identifica">
+                    <option value="1">ninguno</option>
+                     <option value="2">Rut</option>
+                     <option value="3">Pasaporte</option>   
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Rut o Pasaporte:</label>
+                <input type="number" class="form-control" id="pwd" placeholder="ingrese su rut o Pasaporte" name="pswd" required>
+                <div class="valid-feedback"> Rut o Pasaporte valido.</div>
+                <div class="invalid-feedback">porfavor coloque su Rut o Pasaporte, coloquelo sin puntos ni guion.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Numero Telefono:</label>
+                <input type="number" class="form-control" id="pwd" placeholder="ingrese su rut o Pasaporte" name="pswd" required>
+                <div class="valid-feedback"> numero valido.</div>
+                <div class="invalid-feedback">Este Campo es Opcional.</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Cuidad residencia:</label>
+                <input type="text" class="form-control" id="pwd" placeholder="ingrese ciudad de residencia" name="pswd" required>
+                <div class="valid-feedback"> Ciudad valida.</div>
+                <div class="invalid-feedback">ingrese ciudad de residencia.</div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">¿En que te gustaria participar en la ONG?</label>
+                <textarea name="comentarios" rows="10" placeholder="Escribe aquí tus comentarios" class="form-control"></textarea>
+                <div class="valid-feedback"> Comentario valido.</div>
+                <div class="invalid-feedback">ingrese .</div>
+            </div>
+            <a href="index.html" button type="submit" class="btn btn-primary">Enviar</a>
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+        </form>
+    </section>
+</body>
